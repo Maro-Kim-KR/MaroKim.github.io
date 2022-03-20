@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanilla Challenge</title>
+    <meta charset="UTF-8" lang="en">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="background.js" defer></script>
+    <script src="clock.js" defer></script>
+    <script src="login.js" defer></script>
+    <script src="quote.js" defer></script>
+    <script src="todo.js" defer></script>
+  </head>
+  <body>
+    <form class="loginform">
+      <input id="usernameinput" required type="text" maxlength="10">
+      <input class="submitbtn" type="submit" value="LOG IN">
+    </form>
+    <section class="wrapper">
+      <section class="header">
+        <div class="welcome"></div>
+      </section>
+      <section class="main">
+        <div class="clock">
+          <div></div>
+          <div></div>
+        </div>
+        <form class="todoform">
+          <input required type="text" placeholder="write your To-Do" class="todoinput">
+          <input type="submit" class="todosubmit">
+          <ul class="todolist">
+          </ul>
+        </form>
+      </section>
+      <section class="footer">
+        <div class="quote">
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
