@@ -1,0 +1,135 @@
+@import url("minireset.css");
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap");
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+:root {
+  --font-color: #ffffff;
+}
+
+* {
+  font-family: "Yantramanav", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--font-color);
+}
+
+.loginform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#usernameinput {
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 20px;
+  color: var(--font-color);
+  border: 3px solid var(--font-color);
+  border-radius: 4px;
+  background-color: transparent;
+}
+.submitbtn {
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 25px;
+  display: block;
+  padding: 10px;
+  color: var(--font-color);
+  background-color: transparent;
+  border: none;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadein 2s;
+}
+.clock :first-child {
+  font-family: "Yantramanav", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+.clock :last-child {
+  font-family: "Yantramanav", sans-serif;
+  font-size: 96px;
+}
+
+.welcome {
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 700;
+  margin: 50px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--font-color);
+  animation: fadein 2s;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.todoform .todoinput {
+  background-color: transparent;
+  margin-bottom: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid var(--font-color);
+  font-size: 20px;
+  color: var(--font-color);
+}
+.todoform .todoinput::placeholder {
+  color: var(--font-color);
+}
+.delbtn {
+  color: var(--font-color);
+  background-color: transparent;
+  border: none;
+}
+.todosubmit {
+  display: none;
+}
+
+.quote {
+  font-family: "Yantramanav", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  animation: fadein 2s;
+}
+
+.quote :first-child {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
